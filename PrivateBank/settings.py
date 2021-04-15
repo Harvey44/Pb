@@ -136,7 +136,7 @@ SITE_ID = 1
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 AUTH_USER_MODEL = 'WestBank.Customprofile'
-LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/account/app'
+LOGIN_REDIRECT_URL = 'http://privatebank.herokuapp.com/account/app'
 
 
 # Internationalization
