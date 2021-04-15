@@ -1,0 +1,352 @@
+
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+
+<!doctype html>
+<!--[if lte IE 8 ]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="icon" type="image/x-icon" href="https://online.bankofthewest.com/BOW/Themes/CustomPS/Images/favicon.ico" /><link rel="shortcut icon" type="image/x-icon" href="https://online.bankofthewest.com/BOW/Themes/CustomPS/Images/favicon.ico" /><title>
+	Sign In to Access Your Accounts - Bank of the West
+</title>
+  <!-- NOTE: custom fonts like roboto doesn't work when bundled. -->
+  <link href="https://online.bankofthewest.com/BOW/Themes/CustomPS/CSS/bowfonts.css" rel="stylesheet" type="text/css" /><link href="https://online.bankofthewest.com/BOW/Themes/CustomPS/CSS/Standard-bundle.less.min.css" rel="stylesheet" type="text/css" />
+  <!--[if lte IE 7]>
+    <link href="Themes/CustomPS/CSS/p7ccm_ie.css" rel="stylesheet" type="text/css" media="all" />
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <link href="Themes/CustomPS/CSS/bow_ie.css" rel="stylesheet" type="text/css" media="all" /><link href="Themes/CustomPS/CSS/bow_ie_print.css" rel="stylesheet" type="text/css" media="print" />
+  <![endif]-->
+  <meta name="description" content="Sign in to Online Banking from Bank of the West to easily access your account information, transfer funds between accounts, pay bills and more." /><meta name="keywords" content="Online Banking, Business Online Banking, BancWest Investment Services, sign in, log in, login, log on" /><meta id="AnalyticsPageTitle" name="AnalyticsPageTitle" /><meta id="EnvironmentInstanceId" name="EnvironmentInstanceId" content="Production" /><meta id="AccountType" name="AccountType" /><meta id="UserType" name="UserType" /><meta id="UserProfileId" name="UserProfileId" /><meta id="TargetEnvironmentProperty" name="TargetEnvironmentProperty" content="799917f4-9be1-ef80-c538-fd0c91bcf09b" />
+  <script  language="javascript" type="text/javascript" src="https://online.bankofthewest.com/BOW/Themes/CustomPS/DTM/wrapper.debug.js"></script>
+<link href="https://online.bankofthewest.com/BOW/DESGetFiles.aspx?type=styles&amp;version=63749944720&amp;files=13" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <img id="CalendarIcon" class="icon-calendar hidden" src="https://online.bankofthewest.com/BOW/Themes/CustomPS/Images/Calendar.gif" />
+  <img id="ErrorIcon" class="icon-error hidden" src="https://online.bankofthewest.com/BOW/Themes/CustomPS/Images/icon_messg_error_24x24.png" />
+ <form class="login" method="POST" action="{% url 'account_login' %}">{% csrf_token %}
+{% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+
+
+
+    <div id="p7CCM_1" class="p7CCM01">
+    <header>
+      <div id="master-header" class="p7ccm01-content-row p7ccm-row">
+        <div class="p7ccm01-1col-column1 p7ccm-col">
+          <div class="p7ccm01-1col-column1-cnt p7ccm01-content p7ccm01-no-padding">
+            <div id="p7CCM_2" class="p7ccm01-fixed-960 p7CCM01 p7ccm01-auto screenOnly">
+              <div class="p7ccm01-content-row p7ccm-row">
+                <!-- InstanceBeginEditable name="BotwLogo" -->
+                <div class="p7ccm01-2col-sidebar-fixed-left-column1 p7ccm-col">
+                  <div class="p7ccm01-2col-sidebar-fixed-left-column1-cnt p7ccm01-content p7ccm01-no-padding">
+                    <div id="bowlogo">
+                      <a id="LinkButton1" href="javascript:__doPostBack(&#39;LinkButton1&#39;,&#39;&#39;)"><img id="SpritePlaceholder1" class="logoButton" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Bank of the West BNP Paribas" /></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- InstanceEndEditable -->
+                <div class="screenOnly">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="master-nav" role="navigation" aria-label="main">
+        <div class="p7CCM01 p7ccm01-auto screenOnly">
+
+        </div>
+      </nav>
+    </header>
+      <div id="mainarea" class="p7ccm01-content-row p7ccm-row" role="main">
+        <div class="p7ccm01-1col-column1 p7ccm-col">
+          <div class="p7ccm01-1col-column1-cnt p7ccm01-content p7ccm01-no-padding">
+            <div id="p7CCM_4" class="p7CCM01 p7ccm01-auto">
+
+              <div class="page-header">
+      <div id="master-ad-top">
+        <div class="p7ccm01-fixed-960 p7CCM01 p7ccm01-auto screenOnly">
+
+            <div id="headerBanner" class="p7ccm-row">
+              <div class="p7ccm01-1col-column1 p7ccm-col">
+                <div class="p7ccm01-1col-column1-cnt p7ccm01-content">
+                  <span id="AdUnderMainNav">
+                    <div id="AdBelowMainNav">
+                        <!--
+                            TODO: Create US to handle the following ADA compliance issue:
+                            The ad image should contain the Alt attribute to instruct the user what is the image content as recommended by Kim Bunge.
+                            OLB team has to coordinate with Adobe advertisement team to include these changes.
+                        -->
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+                <div class="p7ccm01-content-row p7ccm-row">
+                  <div class="p7ccm01-fixed-960 p7CCM01 p7ccm01-auto">
+                    <div id="pageareaandrelatedlinks" class="p7ccm01-content-row p7ccm-row">
+                      <div class="p7ccm01-1col-column1 p7ccm-col">
+                        <div class="p7ccm01-1col-column1-cnt p7ccm01-content p7ccm01-no-padding">
+                          <!-- InstanceBeginEditable name="PageTitleArea" -->
+                          <div id="pagetitlearea">
+                            <h1>
+                              Sign In to Access Your Accounts
+                            </h1>
+                          </div>
+
+
+                          <div id="contentarea">
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-header-region" class="p7ccm01-content-row p7ccm-row">
+                  <div class="p7ccm01-fixed-960 p7CCM01 p7ccm01-auto">
+
+                  </div>
+                </div>
+              </div>
+              <div class="page-content">
+                <div class="p7ccm01-fixed-960 p7CCM01 p7ccm01-auto">
+                  <div id="internaltabarea" class="p7ccm01-content-row p7ccm-row">
+                    <div class="p7ccm01-1col-column1 p7ccm-col">
+                      <div class="p7ccm01-1col-column1-cnt p7ccm01-content p7ccm01-no-padding">
+                        <div id="WideMainAreaContentArea">
+
+
+
+                        </div>
+
+
+
+  <input name="ChatStaticUrl" type="hidden" id="ChatStaticUrl" />
+  <input type="hidden" name="AlternateTextHidden" id="AlternateTextHidden" value="Marketting  Message" />
+  <input type="hidden" name="ErrorMessageHidden" id="ErrorMessageHidden" value="The information you entered does not match our records. Please verify your information and try again." />
+  <div class="login-container table">
+    <div id="login-dialog table-row">
+      <div class="signon table-cell">
+        <div id="login-dialog-content">
+          <div id="ErrorDiv" class="Error-Region"></div>
+
+
+
+<div class="true-stamp-placeholder" style="display: none">
+  <div class="trueStampDiv">
+    <img id="ctlSignon_TrueStampImage" />
+  </div>
+</div>
+<div class="textBoxLabel">
+     {{ form.as_p }}
+  {% if redirect_field_value %}
+</div>
+<div class="textBoxContainerSmallMargin">
+  <input name="ctlSignon$UserIdTextBox" type="text" maxlength="32" id="ctlSignon_UserIdTextBox" class="wideTextBox" data-alt="Error" />
+
+  <span style='visibility:hidden;display:none' class='error-text'  id='ctlSignon_cemUserID'><img id="ctlSignon_cemUserID_Img" src="/BOW/Themes/CustomPS/Images/icon_messg_error_24x24.png" align="top" />
+<div class='errorTextLayout'><span id='ctlSignon_cemUserID_Txt'></span></div></span>
+  <div class="signon-forgotUserNameLink">
+    <a id="ctlSignon_lnkForgotYourUsername" class="signon" data-href="/BOW/Enroll/LandingPage.aspx?referrer=ForgotUsername" href="/BOW/Login.aspx?error=NoJavascript">Forgot your Username?</a>
+  </div>
+</div>
+
+
+
+
+<div class="textBoxContainerSmallMargin margin-bottom-30">
+  <input name="ctlSignon$PasswordTextBox" type="password" maxlength="32" id="ctlSignon_PasswordTextBox" class="wideTextBox" MinLength="1" data-alt="Error" />
+
+  <span style='visibility:hidden;display:none' class='error-text'  id='ctlSignon_cemPassword'><img id="ctlSignon_cemPassword_Img" src="/BOW/Themes/CustomPS/Images/icon_messg_error_24x24.png" align="top" />
+<div class='errorTextLayout'><span id='ctlSignon_cemPassword_Txt'></span></div></span>
+  <div class="signon-forgotUserNameLink">
+    <a id="ctlSignon_ForgotYourPasswordLink" class="signon" data-href="/BOW/ForgottenPassword/ForgotPassword.aspx" href="/BOW/Login.aspx?error=NoJavascript">Forgot your Password?</a>
+  </div>
+</div>
+
+
+
+
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+   <div id="SignOnButtons">
+  <input type="submit" name="ctlSignon$LogOnButton" value="Sign In" id="ctlSignon_LogOnButton" class="primarybutton" />
+</div>
+        </div>
+        <img class="businessEnrollmentHorizontalSeparator" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="height:20px;width:678px;" />
+        <p id="login-dialog-footer">
+          New?
+          &nbsp;<a id="lnkEnroll" data-href="/BOW/Enroll/LandingPage.aspx" href="/BOW/Login.aspx?error=NoJavascript">Sign up for online account access &rsaquo;</a>
+        </p>
+      </div>
+      <div class="table-cell">
+        <div id="AdSignInPage">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="chatInvoke" class="modulePanel">
+	<div id="chatInvoke_olb_chat" class="chatdata"></div>
+</div>
+
+
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="chatInvokeAuth" class="modulePanel">
+	<div id="chatInvokeAuth_olb_chat" class="chatdata"></div>
+</div>
+
+        <div id="footerBanner">
+          <div class="p7ccm-row screenOnly">
+            <div class="p7ccm01-1col-column1 p7ccm-col">
+              <div class="p7ccm01-1col-column1-cnt p7ccm01-content" id="AdAboveFooter">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[id*='connectwithusgroup'] .socialMedia").each(function () {
+            FiservSpeedBump.bindToControl($(this), "[id$=SpeedBump_SpeedBumpContent]");
+        });
+    });
+</script>
+
+<div id="footer" class="p7ccm01-content-row p7ccm-row" role="contentinfo">
+
+
+    <!--
+    SiteVersion:20.12.0.0
+    -->
+
+  <div class="p7ccm01-fixed-960 p7CCM01 p7ccm01-auto">
+    <div class="p7ccm01-1col-column1-cnt p7ccm01-content p7ccm01-no-padding">
+      <div id="p7CCM_3" class="p7CCM01 p7ccm01-auto">
+        <div class="p7ccm01-content-row p7ccm-row">
+          <div id="footerlinks" class="screenOnly visible-desktop-viewport">
+            <a id="FooterNavigationAndBanner_lnkAboutUs" class="open-in-new-tab" href="https://www.bankofthewest.com/about-us.html">About Us</a>
+            <span class="seperator">
+              .</span>
+            <a id="FooterNavigationAndBanner_lnkFooterContactUs" class="open-in-new-tab" href="https://www.bankofthewest.com/customer-service.html">Contact Us</a>
+            <span class="seperator">
+              .</span>
+            <a id="FooterNavigationAndBanner_lnkLocations" class="open-in-new-tab" href="https://www.bankofthewest.com/customer-service/branch-results.html">Locations</a>
+            <span class="seperator">
+              .</span>
+            <a id="FooterNavigationAndBanner_lnkTermsOfUse" class="open-in-new-tab" href="https://www.bankofthewest.com/security-center-personal/policies/terms-of-use.html">Terms of Use</a>
+            <span class="seperator">
+              .</span>
+            <a id="FooterNavigationAndBanner_lnkPrivacy" class="open-in-new-tab" href="https://www.bankofthewest.com/security-center-personal/policies/online-privacy.html">Privacy</a>
+            <span class="seperator">
+              .</span>
+            <a id="FooterNavigationAndBanner_lnkSecurityCenter" class="open-in-new-tab" href="https://www.bankofthewest.com/security-center-personal.html">Security Center</a>
+            <span class="seperator">
+              .</span>
+            <a id="FooterNavigationAndBanner_lnkServiceAgreement" class="open-in-new-tab" href="https://bankofthewest.com/~/media/pdf/personal-banking/online-banking/olmsa.pdf">Service Agreement</a>
+          </div>
+        </div>
+        <div class="p7ccm01-content-row p7ccm-row">
+          <div id="FooterNavigationAndBanner_connectwithusgroup" class="screenOnly visible-desktop-viewport">
+            <img class="socialMedia-spry-image" usemap="#sociallinksimage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+            <map name="sociallinksimage">
+              <area shape="rect" coords="0,0,23,23" href="http://www.facebook.com/BankoftheWest" alt="" target="_blank" class="socialMedia" />
+              <area shape="rect" coords="43,0,70,23" href="https://twitter.com/bankofthewest" alt="" target="_blank" class="socialMedia" />
+              <area shape="rect" coords="86,0,113,23" href="http://www.youtube.com/bankofthewest" alt="" target="_blank" class="socialMedia" />
+              <area shape="rect" coords="129,0,156,23" href="http://www.linkedin.com/company/bank-of-the-west" alt="" target="_blank" class="socialMedia" />
+              <area shape="rect" coords="172,0,206,23" href="https://meansandmatters.bankofthewest.com/" alt="" target="_blank" />
+              <area shape="rect" coords="214,0,243,23" href="https://www.instagram.com/bankofthewest" alt="" target="_blank" class="socialMedia" />
+            </map>
+          </div>
+        </div>
+        <div class="p7ccm01-content-row p7ccm-row">
+          <div id="copyright">
+            &copy; 2021 Bank of the West.
+          </div>
+          <div id="FooterNavigationAndBanner_memberfdic">
+            Member FDIC. Equal Housing Lender&nbsp;<div class="EHO-logo-image"></div>
+          </div>
+          <div id="message1">
+            In South Dakota, Bank of the West operates under the name Bank of the West California.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+
+
+<div id="SpeedBump_SpeedBumpContent" class="speedBump hidden screenOnly speedBumpContent " data-modal-overrides="{&quot;containerId&quot;:&quot;SpeedBumpContainer&quot;,&quot;extraContainerClasses&quot;:null}" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;SpeedBump_btnSpeedBumpYes&#39;)">
+
+  <div class="speedBumpTitle">
+    <h1 id="lblSpeedBumpTitle" class="title">
+      <span class="img"></span><span id="SpeedBump_lblTitle">You’re Now Leaving Bank of the West</span>
+    </h1>
+  </div>
+  <div id="SpeedBumpData" class="hidden screenOnly speedBumpData">
+    <div class="speedBumpClose close closeOnClick" id="SpeedBumpClose">
+      <a id="SpeedBump_litSpeedBumpClose" tabindex="101" class="speedBumpClose close closeOnClick" href="javascript:__doPostBack(&#39;SpeedBump$litSpeedBumpClose&#39;,&#39;&#39;)"></a>
+    </div>
+    <div class="instructionsContainer">
+      <span id="SpeedBump_lblSpeedBumpInstructions"><p>You’re entering a website operated by a third party. Bank of the West makes no warranty as to the content or functionality of this website. The privacy and security policies of this site may differ from those we practice on our website.</p></span>
+    </div>
+    <div class="speedBumpButtons speedBumpFooter">
+      <input type="submit" name="SpeedBump$btnSpeedBumpNo" value="Cancel" id="SpeedBump_btnSpeedBumpNo" tabindex="100" class="secondarybutton cancel close closeOnClick" />
+      <input type="submit" name="SpeedBump$btnSpeedBumpYes" value="Continue" id="SpeedBump_btnSpeedBumpYes" tabindex="102" class="continuebutton continue" data-dma="GoToNativeLoginScreen" />
+    </div>
+  </div>
+
+</div>
+
+    <input type="hidden" name="OpinionLabAnonymousId" id="OpinionLabAnonymousId" />
+
+</form>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" >var _cf = _cf || [];  _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/clientlibs/d3ef32b1ano249414e15851e3f2d628']); </script><script type="text/javascript"  src="/clientlibs/d3ef32b1ano249414e15851e3f2d628"></script>
+</body>
+</html>
+<noscript><meta http-equiv="refresh" content="0; URL=/BOW/NoScriptWarning.html" /></noscript>
+
+{% endblock %}

@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+<!--
+Template Name: Materialize - Material Design Admin Template
+Author: PixInvent
+Website: http://www.pixinvent.com/
+Contact: hello@pixinvent.com
+Follow: www.twitter.com/pixinvents
+Like: www.facebook.com/pixinvents
+Purchase: https://themeforest.net/item/materialize-material-design-admin-template/11446068?ref=pixinvent
+Renew Support: https://themeforest.net/item/materialize-material-design-admin-template/11446068?ref=pixinvent
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+
+-->
+<html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>Dashboard - PrivateBankOfTheWest  </title>
+    <link rel="apple-touch-icon" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/favicon/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/animate-css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/chartist-js/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/css/themes/vertical-modern-menu-template/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/css/themes/vertical-modern-menu-template/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/css/pages/dashboard-modern.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/css/pages/intro.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/css/pages/page-users.min.css">
+     <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/css/custom/custom.css">
+    <!-- END: Custom CSS-->
+  </head>
+  <!-- END: Head-->
+  <body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu preload-transitions 2-columns   " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
+
+      <!-- BEGIN: Header-->
+      <header class="page-topbar" id="header">
+        <div class="navbar navbar-fixed">
+          <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow">
+            <div class="nav-wrapper">
+
+              <ul class="navbar-list right">
+                <li class="dropdown-language"><a class="waves-effect waves-block waves-light translation-button" href="#" data-target="translation-dropdown"><span class="flag-icon flag-icon-gb"></span></a></li>
+                <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                <li class="hide-on-large-only search-input-wrapper"><a class="waves-effect waves-block waves-light search-button" href="javascript:void(0);"><i class="material-icons">search</i></a></li>
+               </ul>
+              <!-- translation-button-->
+              <ul class="dropdown-content" id="translation-dropdown">
+                <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="en"><i class="flag-icon flag-icon-gb"></i> English</a></li>
+                <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a></li>
+                <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></li>
+                <li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a></li>
+              </ul>
+
+          </nav>
+        </div>
+      </header>
+      <!-- END: Header-->
+
+
+
+
+      <!-- BEGIN: SideNav-->
+      <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
+        <div class="brand-sidebar">
+          <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><span class="logo-text hide-on-med-and-down">PrivateWestBank</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
+        </div>
+        <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+
+
+          <li class="navigation-header"><a class="navigation-header-text">Navigations</a><i class="navigation-header-icon material-icons">more_horiz</i>
+          </li>
+          <li class="bold"><a class="waves-effect waves-cyan " href="{% url 'home' %}"><i class="material-icons">home</i><span class="menu-title" data-i18n="Mail">Dashboard</span></a>
+          </li>
+          <li class="bold"><a class="waves-effect waves-cyan " href="{% url 'history' %}"><i class="material-icons">receipt</i><span class="menu-title" data-i18n="Chat">Transactions<span></a>
+          </li>
+          <li class="bold"><a class="waves-effect waves-cyan " href="{% url 'profile' %}"><i class="material-icons">person_outline</i><span class="menu-title" data-i18n="ToDo">User Profile</span></a>
+          </li>
+
+
+
+
+        </ul>
+        <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+      </aside>
+      <!-- END: SideNav-->
+
+    <!-- BEGIN: Page Main-->
+    <div id="main">
+      <div class="row">
+        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
+          <!-- Search for small screen-->
+          <div class="container">
+            <div class="row">
+              <div class="col s10 m6 l6">
+                <h5 class="breadcrumbs-title mt-0 mb-0" id="name"><span>{{request.user}}</span></h5>
+                <ol class="breadcrumbs mb-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item"><a href="#">User</a>
+                  </li>
+                  <li class="breadcrumb-item active">Users Edit
+                  </li>
+                </ol>
+              </div>
+              <div class="col s2 m6 l6"><a class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-target="dropdown1"><i class="material-icons hide-on-med-and-up">settings</i><span class="hide-on-small-onl">Settings</span><i class="material-icons right">arrow_drop_down</i></a>
+                <ul class="dropdown-content" id="dropdown1" tabindex="0">
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="user-profile-page.html">Profile<span class="new badge red">2</span></a></li>
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="app-contacts.html">Contacts</a></li>
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="page-faq.html">FAQ</a></li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li tabindex="0"><a class="grey-text text-darken-2" href="user-login.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12">
+          <div class="container">
+            <!-- users edit start -->
+<div class="section users-edit">
+  <div class="card">
+    <div class="card-content">
+      <!-- <div class="card-body"> -->
+      <ul class="tabs mb-1 row">
+        <li class="tab">
+          <a class="display-flex align-items-center active" id="account-tab" href="#account">
+            <i class="material-icons mr-1">send</i><span>Transfer</span>
+          </a>
+        </li>
+
+      </ul>
+      <div class="divider mb-3"></div>
+      <div class="row">
+        <div class="col s12" id="account">
+          <!-- users edit media object start -->
+
+          <!-- users edit media object ends -->
+          <!-- users edit account form start -->
+          <p id = "bal" hidden>{{context.figure}}</p>
+          <form id="form">{% csrf_token %}
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="row">
+                  <div class="col s12 input-field">
+                    <input id="fullname" name="fullname" type="text" class="validate" 
+                      data-error=".errorTxt1" required>
+                    <label for="fullname">Receipient's Full Name</label>
+                    <small class="errorTxt1"></small>
+                  </div>
+                  <div class="col s12 input-field">
+                    <input id="bankname" name="bankname" type="text" class="validate" 
+                      data-error=".errorTxt2" required>
+                    <label for="bankname">Bank Name</label>
+                    <small class="errorTxt2"></small>
+                  </div>
+                  <div class="col s12 input-field">
+                    <input id="address" name="address" type="text" class="validate" 
+                      data-error=".errorTxt3" required>
+                    <label for="address">Bank Address</label>
+                    <small class="errorTxt3"></small>
+                  </div>
+                  <div class="col s12 input-field">
+                    <input id="number" name="number" type="number" class="validate" 
+                      data-error=".errorTxt3" required>
+                    <label for="number">Account Number</label>
+                    <small class="errorTxt3"></small>
+                  </div>
+                
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="row">
+                  <div class="col s12 input-field">
+                    <input id="amount" name="amount" type="number" class="validate" 
+                      data-error=".errorTxt3" required>
+                    <label for="amount">Amount (USD)</label>
+                    <small class="errorTxt3"></small>
+                  </div>
+                  
+           
+                  <div class="col s12 input-field">
+                    <input id="swift" name="swift" type="text" class="validate" 
+                      data-error=".errorTxt3" >
+                    <label for="swift">Swift Code</label>
+                    <small class="errorTxt3"></small>
+                  </div>
+
+                  <div class="col s12 input-field">
+                    <input id="iban" name="iban" type="text" class="validate" 
+                      data-error=".errorTxt3" >
+                    <label for="iban">Iban (If Any)</label>
+                    <small class="errorTxt3"></small>
+                  </div>
+                
+                  <div class="col s12 input-field">
+                    <input id="country" name="country" type="text" class="validate" 
+                      data-error=".errorTxt3" required>
+                    <label for="country">Receipient's Country<label>
+                    <small class="errorTxt3"></small>
+                  </div>
+                  <div class="col s12 input-field">
+                    <input id="narration" name="narration" type="text" class="validate" >
+                    <label for="narration">Narration</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 display-flex justify-content-end mt-3">
+                <button type="submit" class="btn indigo">
+                  Save changes</button>
+                <button type="button" class="btn btn-light">Cancel</button>
+              </div>
+            </div>
+          </form>
+          <!-- users edit account form ends -->
+        </div>
+
+      </div>
+         <br>
+    <div id="myProgress" >
+      <div id="myBar">0%</div>
+    </div>
+    <br>
+         <style>
+      #myProgress {
+        width: 100%;
+        background-color: #ddd;
+        display: none;
+      }
+
+      #myBar {
+        width: 10%;
+        height: 30px;
+        background-color: #4CAF50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        bottom: auto;
+      }
+      </style>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+<!-- users edit ends -->
+
+          </div>
+          <div class="content-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Page Main-->
+    <!-- form2 -->
+  <div class="loginPopup">
+      <div class="formPopup" id="myForm">
+        <form id="form2" class="formContainer">
+            {% csrf_token %}
+            <div class="card-alert card red">
+              <div class="card-content white-text" id="errorid" hidden>
+                <p>Incorrect Transfer Pin</p>
+              </div>
+              
+            </div>
+          <h5>Please Enter Transfer Pin</h5>
+          <label for="psw">
+            <strong>Pin</strong>
+          </label>
+          <input type="password" id="psw" placeholder="Your Pin" name="pin" required>
+          <button type="submit" class="btn">Proceed</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+    <!-- end form2 -->
+    <!-- form3 -->
+    <div class="loginPopup">
+      <div class="formPopup" id="myForm2">
+        <form id="form3" class="formContainer">
+            {% csrf_token %}
+            <div class="card-alert card red">
+              <div class="card-content white-text" id="errorid2" hidden>
+                <p>Incorrect Transfer Tax Code</p>
+              </div>
+              
+            </div>
+          <h5>Please Enter IMF Transfer Tax Code</h5>
+          <label for="psw">
+            <strong>Tax Code</strong>
+          </label>
+          <input type="password" id="psw" placeholder="Your Tax Code" name="code" required>
+          <button type="submit" class="btn">Proceed</button>
+          <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+        </form>
+      </div>
+    </div>
+    <!-- end form3 -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .openBtn {
+        display: flex;
+        justify-content: left;
+      }
+      .openButton {
+        border: none;
+        border-radius: 5px;
+        background-color: #1c87c9;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+        position: fixed;
+      }
+      .loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+      .formContainer .cancel {
+        background-color: #cc0000;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+      }
+    </style>
+    <!-- Theme Customizer -->
+
+<a
+   href="#"
+   data-target="theme-cutomizer-out"
+   class="btn btn-customizer pink accent-2 white-text sidenav-trigger theme-cutomizer-trigger"
+   ><i class="material-icons">settings</i></a
+>
+
+<div id="theme-cutomizer-out" class="theme-cutomizer sidenav row">
+   <div class="col s12">
+      <a class="sidenav-close" href="#!"><i class="material-icons">close</i></a>
+      <h5 class="theme-cutomizer-title">Theme Customizer</h5>
+      <p class="medium-small">Customize & Preview in Real Time</p>
+      <div class="menu-options">
+         <h6 class="mt-6">Menu Options</h6>
+         <hr class="customize-devider" />
+         <div class="menu-options-form row">
+            <div class="input-field col s12 menu-color mb-0">
+               <p class="mt-0">Menu Color</p>
+               <div class="gradient-color center-align">
+                  <span class="menu-color-option gradient-45deg-indigo-blue" data-color="gradient-45deg-indigo-blue"></span>
+                  <span
+                     class="menu-color-option gradient-45deg-purple-deep-orange"
+                     data-color="gradient-45deg-purple-deep-orange"
+                  ></span>
+                  <span
+                     class="menu-color-option gradient-45deg-light-blue-cyan"
+                     data-color="gradient-45deg-light-blue-cyan"
+                  ></span>
+                  <span
+                     class="menu-color-option gradient-45deg-purple-amber"
+                     data-color="gradient-45deg-purple-amber"
+                  ></span>
+                  <span
+                     class="menu-color-option gradient-45deg-purple-deep-purple"
+                     data-color="gradient-45deg-purple-deep-purple"
+                  ></span>
+                  <span
+                     class="menu-color-option gradient-45deg-deep-orange-orange"
+                     data-color="gradient-45deg-deep-orange-orange"
+                  ></span>
+                  <span class="menu-color-option gradient-45deg-green-teal" data-color="gradient-45deg-green-teal"></span>
+                  <span
+                     class="menu-color-option gradient-45deg-indigo-light-blue"
+                     data-color="gradient-45deg-indigo-light-blue"
+                  ></span>
+                  <span class="menu-color-option gradient-45deg-red-pink" data-color="gradient-45deg-red-pink"></span>
+               </div>
+               <div class="solid-color center-align">
+                  <span class="menu-color-option red" data-color="red"></span>
+                  <span class="menu-color-option purple" data-color="purple"></span>
+                  <span class="menu-color-option pink" data-color="pink"></span>
+                  <span class="menu-color-option deep-purple" data-color="deep-purple"></span>
+                  <span class="menu-color-option cyan" data-color="cyan"></span>
+                  <span class="menu-color-option teal" data-color="teal"></span>
+                  <span class="menu-color-option light-blue" data-color="light-blue"></span>
+                  <span class="menu-color-option amber darken-3" data-color="amber darken-3"></span>
+                  <span class="menu-color-option brown darken-2" data-color="brown darken-2"></span>
+               </div>
+            </div>
+            <div class="input-field col s12 menu-bg-color mb-0">
+               <p class="mt-0">Menu Background Color</p>
+               <div class="gradient-color center-align">
+                  <span
+                     class="menu-bg-color-option gradient-45deg-indigo-blue"
+                     data-color="gradient-45deg-indigo-blue"
+                  ></span>
+                  <span
+                     class="menu-bg-color-option gradient-45deg-purple-deep-orange"
+                     data-color="gradient-45deg-purple-deep-orange"
+                  ></span>
+                  <span
+                     class="menu-bg-color-option gradient-45deg-light-blue-cyan"
+                     data-color="gradient-45deg-light-blue-cyan"
+                  ></span>
+                  <span
+                     class="menu-bg-color-option gradient-45deg-purple-amber"
+                     data-color="gradient-45deg-purple-amber"
+                  ></span>
+                  <span
+                     class="menu-bg-color-option gradient-45deg-purple-deep-purple"
+                     data-color="gradient-45deg-purple-deep-purple"
+                  ></span>
+                  <span
+                     class="menu-bg-color-option gradient-45deg-deep-orange-orange"
+                     data-color="gradient-45deg-deep-orange-orange"
+                  ></span>
+                  <span class="menu-bg-color-option gradient-45deg-green-teal" data-color="gradient-45deg-green-teal"></span>
+                  <span
+                     class="menu-bg-color-option gradient-45deg-indigo-light-blue"
+                     data-color="gradient-45deg-indigo-light-blue"
+                  ></span>
+                  <span class="menu-bg-color-option gradient-45deg-red-pink" data-color="gradient-45deg-red-pink"></span>
+               </div>
+               <div class="solid-color center-align">
+                  <span class="menu-bg-color-option red" data-color="red"></span>
+                  <span class="menu-bg-color-option purple" data-color="purple"></span>
+                  <span class="menu-bg-color-option pink" data-color="pink"></span>
+                  <span class="menu-bg-color-option deep-purple" data-color="deep-purple"></span>
+                  <span class="menu-bg-color-option cyan" data-color="cyan"></span>
+                  <span class="menu-bg-color-option teal" data-color="teal"></span>
+                  <span class="menu-bg-color-option light-blue" data-color="light-blue"></span>
+                  <span class="menu-bg-color-option amber darken-3" data-color="amber darken-3"></span>
+                  <span class="menu-bg-color-option brown darken-2" data-color="brown darken-2"></span>
+               </div>
+            </div>
+            <div class="input-field col s12">
+               <div class="switch">
+                  Menu Dark
+                  <label class="float-right"
+                     ><input class="menu-dark-checkbox" type="checkbox"/> <span class="lever ml-0"></span
+                  ></label>
+               </div>
+            </div>
+            <div class="input-field col s12">
+               <div class="switch">
+                  Menu Collapsed
+                  <label class="float-right"
+                     ><input class="menu-collapsed-checkbox" type="checkbox"/> <span class="lever ml-0"></span
+                  ></label>
+               </div>
+            </div>
+            <div class="input-field col s12">
+               <div class="switch">
+                  <p class="mt-0">Menu Selection</p>
+                  <label>
+                     <input
+                        class="menu-selection-radio with-gap"
+                        value="sidenav-active-square"
+                        name="menu-selection"
+                        type="radio"
+                     />
+                     <span>Square</span>
+                  </label>
+                  <label>
+                     <input
+                        class="menu-selection-radio with-gap"
+                        value="sidenav-active-rounded"
+                        name="menu-selection"
+                        type="radio"
+                     />
+                     <span>Rounded</span>
+                  </label>
+                  <label>
+                     <input class="menu-selection-radio with-gap" value="" name="menu-selection" type="radio" />
+                     <span>Normal</span>
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h6 class="mt-6">Navbar Options</h6>
+      <hr class="customize-devider" />
+      <div class="navbar-options row">
+         <div class="input-field col s12 navbar-color mb-0">
+            <p class="mt-0">Navbar Color</p>
+            <div class="gradient-color center-align">
+               <span class="navbar-color-option gradient-45deg-indigo-blue" data-color="gradient-45deg-indigo-blue"></span>
+               <span
+                  class="navbar-color-option gradient-45deg-purple-deep-orange"
+                  data-color="gradient-45deg-purple-deep-orange"
+               ></span>
+               <span
+                  class="navbar-color-option gradient-45deg-light-blue-cyan"
+                  data-color="gradient-45deg-light-blue-cyan"
+               ></span>
+               <span class="navbar-color-option gradient-45deg-purple-amber" data-color="gradient-45deg-purple-amber"></span>
+               <span
+                  class="navbar-color-option gradient-45deg-purple-deep-purple"
+                  data-color="gradient-45deg-purple-deep-purple"
+               ></span>
+               <span
+                  class="navbar-color-option gradient-45deg-deep-orange-orange"
+                  data-color="gradient-45deg-deep-orange-orange"
+               ></span>
+               <span class="navbar-color-option gradient-45deg-green-teal" data-color="gradient-45deg-green-teal"></span>
+               <span
+                  class="navbar-color-option gradient-45deg-indigo-light-blue"
+                  data-color="gradient-45deg-indigo-light-blue"
+               ></span>
+               <span class="navbar-color-option gradient-45deg-red-pink" data-color="gradient-45deg-red-pink"></span>
+            </div>
+            <div class="solid-color center-align">
+               <span class="navbar-color-option red" data-color="red"></span>
+               <span class="navbar-color-option purple" data-color="purple"></span>
+               <span class="navbar-color-option pink" data-color="pink"></span>
+               <span class="navbar-color-option deep-purple" data-color="deep-purple"></span>
+               <span class="navbar-color-option cyan" data-color="cyan"></span>
+               <span class="navbar-color-option teal" data-color="teal"></span>
+               <span class="navbar-color-option light-blue" data-color="light-blue"></span>
+               <span class="navbar-color-option amber darken-3" data-color="amber darken-3"></span>
+               <span class="navbar-color-option brown darken-2" data-color="brown darken-2"></span>
+            </div>
+         </div>
+         <div class="input-field col s12">
+            <div class="switch">
+               Navbar Dark
+               <label class="float-right"
+                  ><input class="navbar-dark-checkbox" type="checkbox"/> <span class="lever ml-0"></span
+               ></label>
+            </div>
+         </div>
+         <div class="input-field col s12">
+            <div class="switch">
+               Navbar Fixed
+               <label class="float-right"
+                  ><input class="navbar-fixed-checkbox" type="checkbox" checked/> <span class="lever ml-0"></span
+               ></label>
+            </div>
+         </div>
+      </div>
+      <h6 class="mt-6">Footer Options</h6>
+      <hr class="customize-devider" />
+      <div class="navbar-options row">
+         <div class="input-field col s12">
+            <div class="switch">
+               Footer Dark
+               <label class="float-right"
+                  ><input class="footer-dark-checkbox" type="checkbox"/> <span class="lever ml-0"></span
+               ></label>
+            </div>
+         </div>
+         <div class="input-field col s12">
+            <div class="switch">
+               Footer Fixed
+               <label class="float-right"
+                  ><input class="footer-fixed-checkbox" type="checkbox"/> <span class="lever ml-0"></span
+               ></label>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!--/ Theme Customizer -->
+
+   <script>
+        let click = document.getElementById("button");
+        let form1 = document.getElementById("form");
+        let form2 = document.getElementById("form2");
+        let form3 = document.getElementById("form3");
+        let error = document.getElementById("errorid");
+        let error2 = document.getElementById("errorid2");
+        let name = document.getElementById("name").textContent;
+        let bal = document.getElementById("bal").textContent;
+        let amount = document.getElementById("amount");
+
+         form1.addEventListener('submit', ()=>{
+           event.preventDefault();
+          var formData = new FormData(form1)
+          if(formData.get('amount') > bal){
+            swal({
+    title: 'Insufficient Balance',
+    icon: 'error'
+  })
+          }
+          else if(formData.get('amount') < 10){
+            swal({
+    title: 'Minimum Amount is 10 USD',
+    icon: 'error'
+  })
+          }
+          else{
+            move();
+          }
+           
+         })
+
+          form2.addEventListener('submit', ()=>{
+           event.preventDefault();
+           postpin();
+          })
+
+          form3.addEventListener('submit', ()=>{
+           event.preventDefault();
+           postcode();
+          })
+
+       
+
+
+        function move() {
+           event.preventDefault();
+           var formData = new FormData(form1)
+           console.log(formData);
+          var x = document.getElementById("myProgress");
+          x.style.display = "block";
+
+  var i = 0;
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 50);
+
+    function frame() {
+      if (width >= 100) {
+        window.alert("Hello")
+        clearInterval(id);
+        i = 0;
+      }
+      else if(width == 50){
+
+       clearInterval(id);
+        openForm();
+
+
+   }
+      else{
+
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+
+      }
+
+    }
+  }
+}
+
+        async function postpin(){
+          event.preventDefault();
+          var formData = new FormData(form2)
+          formData.append('username', name)
+          fetch('http://127.0.0.1:8000/account/postpin', {
+      
+      method: 'POST',
+      
+  body: formData,
+
+  }).then(response => response.json())
+  .then(jsondata => {
+    
+      if (jsondata.status == true){
+            second();
+
+         }
+         else{
+          error.style.display = "block";
+          console.log(jsondata['message'])
+         }
+ 
+ 
+  
+  }).catch(function(error){
+    alert(error)
+   
+  })
+
+          
+        }
+  
+        async function postcode(){
+          event.preventDefault();
+          var formData = new FormData(form3)
+          formData.append('username', name)
+          fetch('http://127.0.0.1:8000/account/postcode', {
+      
+      method: 'POST',
+      
+  body: formData,
+
+  }).then(response => response.json())
+  .then(jsondata => {
+    
+      if (jsondata.status == true){
+            third();
+
+         }
+         else{
+          error2.style.display = "block";
+          
+         }
+ 
+ 
+  
+  }).catch(function(error){
+    alert(error)
+   
+  })
+
+          
+        }
+ 
+        async function posttransfer(){
+          
+          var formData = new FormData(form1)
+          formData.append('username', name)
+          fetch('http://127.0.0.1:8000/account/postransfer', {
+      
+      method: 'POST',
+      
+  body: formData,
+
+  }).then(response => response.json())
+  .then(jsondata => {
+    
+      if (jsondata.status == true){
+
+  swal({
+    title: 'Transaction Successful',
+    icon: 'success'
+  })
+  reset();
+         }
+         else{
+          window.alert("GOOD");
+          
+         }
+ 
+ 
+  
+  }).catch(function(error){
+    alert(error)
+   
+  })
+
+          
+        }
+ 
+        function reset(){
+          var x = document.getElementById("myProgress");
+          x.style.display = "none";
+        }
+     
+        function openForm(){
+  document.getElementById("myForm").style.display = "block";
+
+}
+
+        function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  reset();
+}
+
+function closeForm2() {
+  document.getElementById("myForm2").style.display = "none";
+  reset();
+}
+
+function second() {
+  closeForm()
+          var x = document.getElementById("myProgress");
+          var elem = document.getElementById("myBar");
+          x.style.display = "block";
+
+         var a = 51;
+         var run = setInterval(frames, 50);
+         function frames(){
+           a = a +1;
+           if (a == 81){
+             clearInterval(run);
+             document.getElementById("myForm2").style.display = "block";
+           }
+           else{
+            elem.style.width = a + "%";
+        elem.innerHTML = a  + "%";
+           }
+         }
+        }
+
+        function third() {
+          closeForm2();
+          var x = document.getElementById("myProgress");
+          var elem = document.getElementById("myBar");
+          x.style.display = "block";
+
+         var a = 81;
+         var run = setInterval(frames, 20);
+         function frames(){
+           a = a +1;
+           if (a == 101){
+             clearInterval(run);
+             posttransfer();
+           }
+           else{
+            elem.style.width = a + "%";
+        elem.innerHTML = a  + "%";
+           }
+         }
+        }
+
+     </script>
+
+    <!-- BEGIN: Footer-->
+
+    <footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow">
+        <div class="footer-copyright">
+          <div class="container"><span>&copy; 2021          <a href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PrivateBankOfTheWest</a> All rights reserved.</span><span class="right hide-on-small-only">Issured by <a href="https://pixinvent.com/">FDIC</a></span></div>
+        </div>
+      </footer>
+
+      <!-- END: Footer-->
+      <!-- BEGIN VENDOR JS-->
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/vendors.min.js"></script>
+      <!-- BEGIN VENDOR JS-->
+      <!-- BEGIN PAGE VENDOR JS-->
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/chartjs/chart.min.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/chartist-js/chartist.min.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/chartist-js/chartist-plugin-tooltip.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/chartist-js/chartist-plugin-fill-donut.min.js"></script>
+      <!-- END PAGE VENDOR JS-->
+      <!-- BEGIN THEME  JS-->
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/plugins.min.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/search.min.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/custom/custom-script.min.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/scripts/customizer.min.js"></script>
+      <!-- END THEME  JS-->
+      <!-- BEGIN PAGE LEVEL JS-->
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/scripts/dashboard-modern.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/vendors/sweetalert/sweetalert.min.js"></script>
+      <script src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/js/scripts/extra-components-sweetalert.min.js"></script>
+      <!-- END PAGE LEVEL JS-->
+  </body>
+</html>
