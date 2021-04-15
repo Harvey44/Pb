@@ -1,3 +1,4 @@
+import locale
 import random
 import string
 
@@ -119,7 +120,10 @@ def post_transfer(request):
             transaction = Transactions.objects.create(user=user, fullname=fullname, amount=amount, bankname=bankname,
                                                       number=number, country=country, reference="REF " + ref,
                                                       status=True)
-
+            user.figure -= amount
+            df = locale.currency(user.figure, grouping=True)
+            user.balance = df.replace("$", "").replace(".00", "")
+            user.save()
             response = {"message": 'Success',
                         "status": True,
                         "status_code": status.HTTP_200_OK,
